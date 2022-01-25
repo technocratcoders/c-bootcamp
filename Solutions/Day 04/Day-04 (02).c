@@ -1,19 +1,22 @@
+/*
+---------- TECHNOCRAT CODERS ----------
+C-Language Training Bootcamp --> Day-04
+
+Q.2) Write a program to multiply two numbers.
+*/
+
 #include <stdio.h>
-#include <math.h>
 
 int main() {
-    int num;
-    scanf("%d", &num);
     
-    int rem, ans=0, i=0;
-    while(n) {
-        rem = n%2;
-        n/=2;
-        ans = (pow(10,i) * rem) + ans;          // reversing the bits
-        i++;
-    }
+    int num1, num2, prod = 0;
     
-    printf("%d", ans);
+    printf("Enter two numbers: ");
+    scanf("%d %d", &num1, &num2);          // Taking two numbers as input
+    
+    prod = num1 * num2;
+    
+    printf("The product of entered two numbers is %d", prod);                     // Printing product
     
     return 0;
 }
