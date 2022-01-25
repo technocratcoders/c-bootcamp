@@ -1,19 +1,23 @@
+/*
+---------- TECHNOCRAT CODERS ----------
+C-Language Training Bootcamp --> Day-04
+
+Q.4) Write a program to find the area of a circle.
+*/
+
 #include <stdio.h>
-#include <math.h>
 
 int main() {
-    int num;
-    scanf("%d", &num);
     
-    int rem, ans=0, i=0;
-    while(n) {
-        rem = n%2;
-        n/=2;
-        ans = (pow(10,i) * rem) + ans;          // reversing the bits
-        i++;
-    }
+    int rad;
+    float area = 0;
     
-    printf("%d", ans);
+    printf("Enter the radius of circle: ");
+    scanf("%d", &rad);          // Taking the radius of circle as input
+    
+    area = 3.14 * rad * rad;
+    
+    printf("The area of circle with the entered radius is %f", area);                     // Printing area
     
     return 0;
 }
