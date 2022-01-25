@@ -1,19 +1,23 @@
+/*
+---------- TECHNOCRAT CODERS ----------
+C-Language Training Bootcamp --> Day-04
+
+Q.5) Write a program to find the area of a triangle.
+*/
+
 #include <stdio.h>
-#include <math.h>
 
 int main() {
-    int num;
-    scanf("%d", &num);
     
-    int rem, ans=0, i=0;
-    while(n) {
-        rem = n%2;
-        n/=2;
-        ans = (pow(10,i) * rem) + ans;          // reversing the bits
-        i++;
-    }
+    int height, base;
+    float area = 0;
     
-    printf("%d", ans);
+    printf("Enter the base and height of triangle: ");
+    scanf("%d %d", &base, &height);              // Taking the base and height of triangle as input
+    
+    area = 0.5 * base * height;
+    
+    printf("The area of triangle with the entered base and height is %f", area);              // Printing area
     
     return 0;
 }
