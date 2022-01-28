@@ -1,5 +1,8 @@
 /*
-Q) Write a program to find the sum of its digits.
+---------- TECHNOCRAT CODERS ----------
+C-Language Training Bootcamp --> Day-11
+
+Q.4) Write a program to find the sum of its digits.
 */
 
 #include <stdio.h>
