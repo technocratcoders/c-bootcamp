@@ -1,5 +1,8 @@
 /*
-Q) Write a program to print the following pattern -
+---------- TECHNOCRAT CODERS ----------
+C-Language Training Bootcamp --> Day-12
+
+Q.5) Write a program to print the following pattern -
     1
    1 2
   1 2 3
@@ -14,7 +17,7 @@ int main() {
     printf("Enter the value of n: ");
     scanf("%d", &n);
 
-    for(int i=1; i<=n; i++) {
+    for(int i=1; i<n; i++) {
         // Printing white spaces
         int space = n - i;
         while(space) {
