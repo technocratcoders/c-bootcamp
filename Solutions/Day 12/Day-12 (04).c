@@ -1,5 +1,8 @@
 /*
-Q) Write a program to print all palindrome numbers till a given number.
+---------- TECHNOCRAT CODERS ----------
+C-Language Training Bootcamp --> Day-12
+
+Q.4) Write a program to print all palindrome numbers till a given number.
 */
 
 #include <stdio.h>
