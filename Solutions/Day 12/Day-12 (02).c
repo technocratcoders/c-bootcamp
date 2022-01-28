@@ -1,5 +1,8 @@
 /*
-Q) Write a program to print prime factors of a number.
+---------- TECHNOCRAT CODERS ----------
+C-Language Training Bootcamp --> Day-12
+
+Q.2) Write a program to print prime factors of a number.
 */
 
 #include <stdio.h>
@@ -9,7 +12,7 @@ int main() {
     printf("Enter the number: ");
     scanf("%d", &num);
     
-    for(int i=0; i<=num; i++) {
+    for(int i=2; i<=num; i++) {
         if(num % i == 0) {
             int fact = i;
 
