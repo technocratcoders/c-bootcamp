@@ -1,5 +1,8 @@
 /*
-Q) Write a program to print fibonacci series using a do-while loop.
+---------- TECHNOCRAT CODERS ----------
+C-Language Training Bootcamp --> Day-11
+
+Q.1) Write a program to print fibonacci series using a do-while loop.
 */
 
 #include <stdio.h>
@@ -13,8 +16,8 @@ int main() {
     
     printf("%d %d ", first, second);
     
+    int i = 3;
     do {
-        int i = 3;
         sum = first + second;
         printf("%d ", sum);
 
@@ -22,7 +25,6 @@ int main() {
         second = sum;
         i++;
     } while (i <= limit);
-    
     
     return 0;
 }
