@@ -1,5 +1,8 @@
 /*
-Q) Write a program to check whether a number is palindrome or not.
+---------- TECHNOCRAT CODERS ----------
+C-Language Training Bootcamp --> Day-11
+
+Q.3) Write a program to check whether a number is palindrome or not.
 */
 
 #include <stdio.h>
