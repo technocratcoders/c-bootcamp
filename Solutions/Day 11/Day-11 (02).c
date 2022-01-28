@@ -1,5 +1,8 @@
 /*
-Q) Write a program to reverse a number.
+---------- TECHNOCRAT CODERS ----------
+C-Language Training Bootcamp --> Day-11
+
+Q.2) Write a program to reverse a number.
 */
 
 #include <stdio.h>
