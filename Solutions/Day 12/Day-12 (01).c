@@ -1,5 +1,8 @@
 /*
-Q) Write a program to print all prime numbers till a given number.
+---------- TECHNOCRAT CODERS ----------
+C-Language Training Bootcamp --> Day-12
+
+Q.1) Write a program to print all prime numbers till a given number.
 */
 
 #include <stdio.h>
@@ -9,7 +12,7 @@ int main() {
     printf("Enter the number: ");
     scanf("%d", &num);
     
-    // This will be our key element to access all prime numbers till num.
+    // key element to access all numbers till num
     int prime = 2;
     
     while (prime <= num) {
