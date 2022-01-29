@@ -1,19 +1,26 @@
+/*
+---------- TECHNOCRAT CODERS ----------
+C-Language Training Bootcamp --> Day-10
+
+Q.2) Write a program to print the sum of first n natural numbers.
+*/
+
 #include <stdio.h>
-#include <math.h>
 
 int main() {
-    int num;
-    scanf("%d", &num);
+    int n;
+    printf("Enter the value of n: ");
+    scanf("%d", &n);
     
-    int rem, ans=0, i=0;
-    while(n) {
-        rem = n%2;
-        n/=2;
-        ans = (pow(10,i) * rem) + ans;          // reversing the bits
-        i++;
+    int sum = 0;
+    
+    for(int i=1; i<=n; i++) {
+        // Adding each number till n
+        sum = sum + i;
     }
     
-    printf("%d", ans);
+    // Printing sum
+    printf("Sum of first %d natural numbers is: %d", n, sum);
     
     return 0;
 }
