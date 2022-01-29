@@ -1,19 +1,32 @@
+/*
+---------- TECHNOCRAT CODERS ----------
+C-Language Training Bootcamp --> Day-10 (Advanced)
+
+Q.3) Write a program to print the following pattern -
+* * * * *
+* * * * 
+* * *
+* *
+*
+*/
+
 #include <stdio.h>
-#include <math.h>
 
 int main() {
-    int num;
-    scanf("%d", &num);
+    int n;
+    printf("Enter the value of n: ");
+    scanf("%d", &n);
     
-    int rem, ans=0, i=0;
-    while(n) {
-        rem = n%2;
-        n/=2;
-        ans = (pow(10,i) * rem) + ans;          // reversing the bits
-        i++;
+    for(int i=1; i<=n; i++) {
+        int star = n - i + 1;
+        
+        // Printing stars
+        for(int j=1; j<=star; j++) {
+            printf("* ");
+        }
+        
+        printf("\n");
     }
-    
-    printf("%d", ans);
     
     return 0;
 }
