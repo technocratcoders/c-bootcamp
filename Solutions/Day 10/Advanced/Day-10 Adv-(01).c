@@ -1,8 +1,8 @@
 /*
 ---------- TECHNOCRAT CODERS ----------
-C-Language Training Bootcamp --> Day-10
+C-Language Training Bootcamp --> Day-10 (Advanced)
 
-Q.5) Write a program to print the following pattern -
+Q.1) Write a program to print the following pattern -
     *
    * *
   * * *
