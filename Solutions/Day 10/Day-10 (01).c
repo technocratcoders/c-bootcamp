@@ -1,19 +1,18 @@
+/*
+---------- TECHNOCRAT CODERS ----------
+C-Language Training Bootcamp --> Day-10
+
+Q.1) Write a program to print the first 50 multiples of 13.
+*/
+
 #include <stdio.h>
-#include <math.h>
 
 int main() {
-    int num;
-    scanf("%d", &num);
     
-    int rem, ans=0, i=0;
-    while(n) {
-        rem = n%2;
-        n/=2;
-        ans = (pow(10,i) * rem) + ans;          // reversing the bits
-        i++;
+    for(int i=1; i<=50; i++) {
+        int multiple = 13*i;
+        printf("%d ", multiple);
     }
-    
-    printf("%d", ans);
     
     return 0;
 }
