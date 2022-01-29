@@ -1,31 +1,40 @@
 /*
-Q) Write a program to print all armstrong numbers till a given number.
+---------- TECHNOCRAT CODERS ----------
+C-Language Training Bootcamp --> Day-12
+
+Q.3) Write a program to print all armstrong numbers till a given number.
 */
 
 #include <stdio.h>
+#include <math.h>
 
 int main() {
     int num;
     printf("Enter the number: ");
     scanf("%d", &num);
     
-    // This will be our key element to access all prime numbers till num.
-    int arm = 1;
-    
-    while (arm <= num) {
-        int flag = 0;
+    for(int i=1; i<=num; i++) {
+        int count=0, temp = i;
         
-        for (int i=2; i<=arm/2; i++) {
-            if(arm % i == 0)
-                flag = 1;
-        }
-
-        if(flag == 0) {
-            // Printing the arm number.
-            printf("%d ", arm);
+        // Counting the number of digits in i
+        while(temp) {
+            count++;
+            temp /= 10;
         }
         
-        arm++;
+        int arm = 0;
+        temp = i;
+        
+        // Checking whether i is armstrong or not
+        while(temp) {
+            int rem = temp % 10;
+            arm = arm + pow(rem, count);
+            temp /= 10;
+        }
+        
+        // Printing the armstrong number
+        if(arm == i)
+            printf("%d ", i);
     }
     
     return 0;
