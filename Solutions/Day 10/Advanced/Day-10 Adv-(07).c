@@ -22,7 +22,7 @@ int main() {
         
         // Printing spaces
         for(int j=1; j<=space; j++) {
-            printf("- ");
+            printf("  ");
         }
         
         int count = 1;
