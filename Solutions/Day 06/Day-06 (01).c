@@ -1,19 +1,31 @@
+/*
+---------- TECHNOCRAT CODERS ----------
+C-Language Training Bootcamp --> Day-06
+
+Q.1) Write a program to calculate simple interest.
+*/
+
 #include <stdio.h>
-#include <math.h>
 
 int main() {
-    int num;
-    scanf("%d", &num);
+    int p, r, t;
+    printf("Enter principal amount: ");
+    scanf("%d", &p);
     
-    int rem, ans=0, i=0;
-    while(n) {
-        rem = n%2;
-        n/=2;
-        ans = (pow(10,i) * rem) + ans;          // reversing the bits
-        i++;
-    }
+    printf("Enter rate: ");
+    scanf("%d", &r);
     
-    printf("%d", ans);
+    printf("Enter time period: ");
+    scanf("%d", &t);
+    
+    // Taking si variable as float because it may contain decimal values
+    float si;
+    
+    // SI = PRT / 100
+    si = (float) (p * r * t) / 100;
+    
+    // Printing simple interest
+    printf("The simple interest on entered amount is %.2f", si);
     
     return 0;
 }
