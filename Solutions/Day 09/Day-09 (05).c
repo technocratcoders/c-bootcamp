@@ -1,19 +1,21 @@
+/*
+---------- TECHNOCRAT CODERS ----------
+C-Language Training Bootcamp --> Day-09
+
+Q.5) Write a program to check whether a triangle is possible or not by entering their sides.
+*/
+
 #include <stdio.h>
-#include <math.h>
 
 int main() {
-    int num;
-    scanf("%d", &num);
+    int a, b, c;
+    printf("Enter the three sides of a triangle: ");
+    scanf("%d %d %d", &a, &b, &c);
     
-    int rem, ans=0, i=0;
-    while(n) {
-        rem = n%2;
-        n/=2;
-        ans = (pow(10,i) * rem) + ans;          // reversing the bits
-        i++;
-    }
-    
-    printf("%d", ans);
+    if((a+b > c) && (b+c > a) && (c+a > b))
+        printf("Triangle is possible");
+    else
+        printf("Triangle is not possible");
     
     return 0;
 }
