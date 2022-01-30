@@ -16,10 +16,10 @@ int main() {
     float vol;
     
     // Volume of cylinder = π*r*r*h
-    vol = (float) 3.14159 * rad * rad * height;
+    vol = (float) 3.14 * rad * rad * height;
     
     // Printing Volume
-    printf("The volume of the cylinder with entered radius and height is: %f", vol);
+    printf("The volume of the cylinder with entered radius and height is: %.2f", vol);
     
     return 0;
 }
