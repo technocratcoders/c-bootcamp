@@ -1,19 +1,28 @@
+/*
+---------- TECHNOCRAT CODERS ----------
+C-Language Training Bootcamp --> Day-09
+
+Q.1) Write a program to find the smallest of three numbers.
+*/
+
 #include <stdio.h>
-#include <math.h>
 
 int main() {
-    int num;
-    scanf("%d", &num);
+    int num1, num2, num3;
+    printf("Enter the three numbers: ");
+    scanf("%d %d %d", &num1, &num2, &num3);
     
-    int rem, ans=0, i=0;
-    while(n) {
-        rem = n%2;
-        n/=2;
-        ans = (pow(10,i) * rem) + ans;          // reversing the bits
-        i++;
+    if(num1 < num2) {
+        if(num1 < num3)
+            printf("%d is smallest", num1);
+        else
+            printf("%d is smallest", num3);
+    } else {
+        if(num2 < num3)
+            printf("%d is smallest", num2);
+        else
+            printf("%d is smallest", num3);
     }
-    
-    printf("%d", ans);
     
     return 0;
 }
