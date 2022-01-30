@@ -1,19 +1,25 @@
+/*
+---------- TECHNOCRAT CODERS ----------
+C-Language Training Bootcamp --> Day-06
+
+Q.2) Write a program to calculate the circumference of a circle.
+*/
+
 #include <stdio.h>
-#include <math.h>
 
 int main() {
-    int num;
-    scanf("%d", &num);
+    int rad;
+    printf("Enter radius of the circle: ");
+    scanf("%d", &rad);
     
-    int rem, ans=0, i=0;
-    while(n) {
-        rem = n%2;
-        n/=2;
-        ans = (pow(10,i) * rem) + ans;          // reversing the bits
-        i++;
-    }
+    // Taking circum variable as float because it may contain decimal values
+    float circum;
     
-    printf("%d", ans);
+    // Circumference = 2πr
+    circum = 2 * 3.14 * rad;
+    
+    // Printing circumference
+    printf("The circumference of the circle with entered radius is %.2f", circum);
     
     return 0;
 }
