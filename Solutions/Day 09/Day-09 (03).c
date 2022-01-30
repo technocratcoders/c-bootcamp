@@ -1,19 +1,32 @@
+/*
+---------- TECHNOCRAT CODERS ----------
+C-Language Training Bootcamp --> Day-09
+
+Q.3) Write a program to check whether a year is a leap or not.
+*/
+
 #include <stdio.h>
-#include <math.h>
 
 int main() {
-    int num;
-    scanf("%d", &num);
+    int year;
+    printf("Enter the year: ");
+    scanf("%d", &year);
     
-    int rem, ans=0, i=0;
-    while(n) {
-        rem = n%2;
-        n/=2;
-        ans = (pow(10,i) * rem) + ans;          // reversing the bits
-        i++;
+    if(year % 100 == 0) {
+        
+        if(year % 400 == 0)
+            printf("%d is a leap year", year);
+        else
+            printf("%d is not a leap year", year);
+            
+    } else {
+        
+        if(year % 4 == 0)
+            printf("%d is a leap year", year);
+        else
+            printf("%d is not a leap year", year);
+        
     }
-    
-    printf("%d", ans);
     
     return 0;
 }
