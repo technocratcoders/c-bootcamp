@@ -1,19 +1,23 @@
+/*
+---------- TECHNOCRAT CODERS ----------
+C-Language Training Bootcamp --> Day-08
+
+Q.3) Write a program to convert celsius temperature into fahrenheit.
+*/
+
 #include <stdio.h>
-#include <math.h>
 
 int main() {
-    int num;
-    scanf("%d", &num);
+    float cels;
+    printf("Enter the temperature in celsius: ");
+    scanf("%f", &cels);
     
-    int rem, ans=0, i=0;
-    while(n) {
-        rem = n%2;
-        n/=2;
-        ans = (pow(10,i) * rem) + ans;          // reversing the bits
-        i++;
-    }
+    float fahren;
     
-    printf("%d", ans);
+    // Converting celsius temperature into fahrenheit
+    fahren = (cels * 1.8) + 32;    
     
+    // Printing temperature in fahrenheit
+    printf("Temperature in fahrenheit: %.2f", fahren);
     return 0;
 }
