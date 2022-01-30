@@ -20,5 +20,9 @@ int main() {
     if(num2 < num1)
         printf("%d is smaller between the two entered numbers", num2);
     
+    // Checking whether both numbers are equal or not
+    if(num2 == num1)
+        printf("Both numbers are equal");
+    
     return 0;
 }
