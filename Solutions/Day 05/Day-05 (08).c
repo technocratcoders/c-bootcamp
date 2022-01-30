@@ -1,19 +1,25 @@
+/*
+---------- TECHNOCRAT CODERS ----------
+C-Language Training Bootcamp --> Day-05
+
+Q.8) Write a program to find the volume of a cone.
+*/
+
 #include <stdio.h>
-#include <math.h>
 
 int main() {
-    int num;
-    scanf("%d", &num);
+    float rad, height;
+    printf("Enter the radius and height of the cone: ");
+    scanf("%f %f", &rad, &height);
     
-    int rem, ans=0, i=0;
-    while(n) {
-        rem = n%2;
-        n/=2;
-        ans = (pow(10,i) * rem) + ans;          // reversing the bits
-        i++;
-    }
+    // Taking vol variable as float because it may contain decimal values
+    float vol;
     
-    printf("%d", ans);
+    // Volume of cone = 1/3*π*r*r*h
+    vol = 3.14159 * rad * rad * height / 3;
+    
+    // Printing Volume
+    printf("The volume of the cone with entered radius and height is: %f", vol);
     
     return 0;
 }
