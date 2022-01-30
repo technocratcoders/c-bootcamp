@@ -1,19 +1,25 @@
+/*
+---------- TECHNOCRAT CODERS ----------
+C-Language Training Bootcamp --> Day-05
+
+Q.7) Write a program to find the volume of a sphere.
+*/
+
 #include <stdio.h>
-#include <math.h>
 
 int main() {
-    int num;
-    scanf("%d", &num);
+    int rad;
+    printf("Enter the radius of the sphere: ");
+    scanf("%d", &rad);
     
-    int rem, ans=0, i=0;
-    while(n) {
-        rem = n%2;
-        n/=2;
-        ans = (pow(10,i) * rem) + ans;          // reversing the bits
-        i++;
-    }
+    // Taking vol variable as float because it may contain decimal values
+    float vol;
     
-    printf("%d", ans);
+    // Volume of sphere = 4/3*π*r*r*r
+    vol = (4 / 3) * 3.14159 * rad * rad * rad;
+    
+    // Printing Volume
+    printf("The volume of the sphere with entered radius and height is: %f", vol);
     
     return 0;
 }
