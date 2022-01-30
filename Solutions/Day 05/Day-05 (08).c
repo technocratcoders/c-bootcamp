@@ -16,10 +16,10 @@ int main() {
     float vol;
     
     // Volume of cone = 1/3*π*r*r*h
-    vol = 3.14159 * rad * rad * height / 3;
+    vol = (float) 3.14 * rad * rad * height / 3;
     
     // Printing Volume
-    printf("The volume of the cone with entered radius and height is: %f", vol);
+    printf("The volume of the cone with entered radius and height is: %.2f", vol);
     
     return 0;
 }
