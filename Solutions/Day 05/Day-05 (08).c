@@ -8,9 +8,9 @@ Q.8) Write a program to find the volume of a cone.
 #include <stdio.h>
 
 int main() {
-    float rad, height;
+    int rad, height;
     printf("Enter the radius and height of the cone: ");
-    scanf("%f %f", &rad, &height);
+    scanf("%d %d", &rad, &height);
     
     // Taking vol variable as float because it may contain decimal values
     float vol;
