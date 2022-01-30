@@ -16,10 +16,10 @@ int main() {
     float vol;
     
     // Volume of sphere = 4/3*π*r*r*r
-    vol = (4 / 3) * 3.14159 * rad * rad * rad;
+    vol = (float) (4 / 3) * 3.14 * rad * rad * rad;
     
     // Printing Volume
-    printf("The volume of the sphere with entered radius is: %f", vol);
+    printf("The volume of the sphere with entered radius is: %.2f", vol);
     
     return 0;
 }
