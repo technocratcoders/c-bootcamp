@@ -1,19 +1,27 @@
+/*
+---------- TECHNOCRAT CODERS ----------
+C-Language Training Bootcamp --> Day-07
+
+Q.2) Write a program to convert seconds into hour, minute and
+second.
+*/
+
 #include <stdio.h>
-#include <math.h>
 
 int main() {
-    int num;
-    scanf("%d", &num);
+    int sec;
+    printf("Enter the time in seconds: ");
+    scanf("%d", &sec);
     
-    int rem, ans=0, i=0;
-    while(n) {
-        rem = n%2;
-        n/=2;
-        ans = (pow(10,i) * rem) + ans;          // reversing the bits
-        i++;
-    }
+    int hr, min;
     
-    printf("%d", ans);
+    hr = sec / 3600;
+    sec %= 3600;
+    min = sec / 60;
+    sec %= 60;
+    
+    // Printing time in hour, minute and seconds
+    printf("%d hours %d minutes %d seconds", hr, min, sec);
     
     return 0;
 }
