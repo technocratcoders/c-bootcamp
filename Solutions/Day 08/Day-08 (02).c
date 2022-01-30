@@ -2,8 +2,7 @@
 ---------- TECHNOCRAT CODERS ----------
 C-Language Training Bootcamp --> Day-08
 
-Q.2) Write a program to find whether the entered number is divisible
-by 5 or not.
+Q.2) Write a program to find whether the entered number is divisible by 5 or not.
 */
 
 #include <stdio.h>
