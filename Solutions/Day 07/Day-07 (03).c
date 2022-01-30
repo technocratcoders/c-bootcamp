@@ -1,19 +1,26 @@
+/*
+---------- TECHNOCRAT CODERS ----------
+C-Language Training Bootcamp --> Day-07
+
+Q.3) Write a program to convert centimeters into km, m & cm.
+*/
+
 #include <stdio.h>
-#include <math.h>
 
 int main() {
-    int num;
-    scanf("%d", &num);
+    int cm;
+    printf("Enter the distance in centimeters: ");
+    scanf("%d", &cm);
     
-    int rem, ans=0, i=0;
-    while(n) {
-        rem = n%2;
-        n/=2;
-        ans = (pow(10,i) * rem) + ans;          // reversing the bits
-        i++;
-    }
+    int km, m;
     
-    printf("%d", ans);
+    km = cm / 100000;
+    cm %= 100000;
+    m = cm / 100;
+    cm %= 100;
+    
+    // Printing time in km, m and cm
+    printf("%d kilometers %d meters %d centimeters", km, m, cm);
     
     return 0;
 }
