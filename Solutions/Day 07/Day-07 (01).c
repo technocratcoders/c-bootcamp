@@ -2,8 +2,7 @@
 ---------- TECHNOCRAT CODERS ----------
 C-Language Training Bootcamp --> Day-07
 
-Q.1) Write a program to calculate the total and percentage of five
-subjects (out of 100).
+Q.1) Write a program to calculate the total and percentage of five subjects (out of 100).
 */
 
 #include <stdio.h>
