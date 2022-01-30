@@ -2,8 +2,7 @@
 ---------- TECHNOCRAT CODERS ----------
 C-Language Training Bootcamp --> Day-06
 
-Q.3) Write a program to calculate the area of a triangle using heron's
-formula.
+Q.3) Write a program to calculate the area of a triangle using heron's formula.
 */
 
 #include <stdio.h>
