@@ -19,5 +19,6 @@ int main() {
     
     // Printing temperature in fahrenheit
     printf("Temperature in fahrenheit: %.2f", fahren);
+    
     return 0;
 }
