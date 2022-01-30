@@ -2,8 +2,7 @@
 ---------- TECHNOCRAT CODERS ----------
 C-Language Training Bootcamp --> Day-07
 
-Q.2) Write a program to convert seconds into hour, minute and
-second.
+Q.2) Write a program to convert seconds into hour, minute and second.
 */
 
 #include <stdio.h>
