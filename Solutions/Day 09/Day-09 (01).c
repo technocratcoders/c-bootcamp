@@ -14,14 +14,14 @@ int main() {
     
     if(num1 < num2) {
         if(num1 < num3)
-            printf("%d is smallest", num1);
+            printf("%d is the smallest", num1);
         else
-            printf("%d is smallest", num3);
+            printf("%d is the smallest", num3);
     } else {
         if(num2 < num3)
-            printf("%d is smallest", num2);
+            printf("%d is the smallest", num2);
         else
-            printf("%d is smallest", num3);
+            printf("%d is the smallest", num3);
     }
     
     return 0;
