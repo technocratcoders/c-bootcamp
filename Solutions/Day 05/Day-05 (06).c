@@ -1,19 +1,25 @@
+/*
+---------- TECHNOCRAT CODERS ----------
+C-Language Training Bootcamp --> Day-05
+
+Q.6) Write a program to find the volume of a cylinder.
+*/
+
 #include <stdio.h>
-#include <math.h>
 
 int main() {
-    int num;
-    scanf("%d", &num);
+    int rad, height;
+    printf("Enter the radius and height of cylinder: ");
+    scanf("%d %d", &rad, &height);
     
-    int rem, ans=0, i=0;
-    while(n) {
-        rem = n%2;
-        n/=2;
-        ans = (pow(10,i) * rem) + ans;          // reversing the bits
-        i++;
-    }
+    // Taking area variable as float because it may contain decimal values
+    float area;
     
-    printf("%d", ans);
+    // Area of cylinder = 2πr(h+r)
+    area = 2 * 3.14 * rad * (rad + height);
+    
+    // Printing Area
+    printf("The area of the cylinder with entered radius and height is: %f", area);
     
     return 0;
 }
