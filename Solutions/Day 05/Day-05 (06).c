@@ -12,14 +12,14 @@ int main() {
     printf("Enter the radius and height of cylinder: ");
     scanf("%d %d", &rad, &height);
     
-    // Taking area variable as float because it may contain decimal values
-    float area;
+    // Taking vol variable as float because it may contain decimal values
+    float vol;
     
-    // Area of cylinder = 2πr(h+r)
-    area = 2 * 3.14 * rad * (rad + height);
+    // Volume of cylinder = π*r*r*h
+    vol = 3.14159 * rad * rad * height;
     
-    // Printing Area
-    printf("The area of the cylinder with entered radius and height is: %f", area);
+    // Printing Volume
+    printf("The volume of the cylinder with entered radius and height is: %f", vol);
     
     return 0;
 }
