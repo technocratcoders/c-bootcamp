@@ -8,9 +8,9 @@ Q.6) Write a program to find the volume of a cylinder.
 #include <stdio.h>
 
 int main() {
-    int rad, height;
+    float rad, height;
     printf("Enter the radius and height of the cylinder: ");
-    scanf("%d %d", &rad, &height);
+    scanf("%f %f", &rad, &height);
     
     // Taking vol variable as float because it may contain decimal values
     float vol;
