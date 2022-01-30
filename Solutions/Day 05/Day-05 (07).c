@@ -8,9 +8,9 @@ Q.7) Write a program to find the volume of a sphere.
 #include <stdio.h>
 
 int main() {
-    int rad;
+    float rad;
     printf("Enter the radius of the sphere: ");
-    scanf("%d", &rad);
+    scanf("%f", &rad);
     
     // Taking vol variable as float because it may contain decimal values
     float vol;
@@ -19,7 +19,7 @@ int main() {
     vol = (4 / 3) * 3.14159 * rad * rad * rad;
     
     // Printing Volume
-    printf("The volume of the sphere with entered radius and height is: %f", vol);
+    printf("The volume of the sphere with entered radius is: %f", vol);
     
     return 0;
 }
