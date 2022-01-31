@@ -2,7 +2,7 @@
 ---------- TECHNOCRAT CODERS ----------
 C-Language Training Bootcamp --> Day-10 (Advanced)
 
-Q.5) Write a program to print the following pattern -
+Q.5) Write a program to print the following pattern (for n=5) -
 1
 2 3
 4 5 6
