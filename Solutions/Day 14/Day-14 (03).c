@@ -1,28 +1,38 @@
 /*
-Q) Write a program to check whether a number is palindrome or not.
+---------- TECHNOCRAT CODERS ----------
+C-Language Training Bootcamp --> Day-14
+
+Q.3) Write a program to print the following pattern (for n=5) -
+    A
+   B B
+  C C C
+ D D D D
+E E E E E
 */
 
 #include <stdio.h>
 
 int main() {
-    int num;
-    printf("Enter the number: ");
-    scanf("%d", &num);
-
-    int rev = 0, rem;
-    int temp = num;
-
-    while (temp > 0) {
-        rem = temp % 10;
-        rev = rev*10 + rem;
-        temp /= 10;
+    int n;
+    printf("Enter the value of n: ");
+    scanf("%d", &n);
+    
+    for(int i=1; i<=n; i++) {
+        int space = n - i;
+        // Printing spaces
+        for(int j=0; j<space; j++) {
+            printf(" ");
+        }
+        
+        char ch = 'A' + (i-1);
+        // Printing characters
+        for(int j=1; j<=i; j++) {
+            printf("%c ", ch);
+        }
+        
+        printf("\n");
     }
-
-    if (rev == num) {
-        printf("The entered number is a palindrome number");
-    } else {
-        printf("The entered number is not a palindrome number");
-    }
+    
     
     return 0;
 }
