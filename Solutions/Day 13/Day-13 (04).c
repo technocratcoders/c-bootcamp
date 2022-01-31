@@ -1,19 +1,46 @@
+/*
+---------- TECHNOCRAT CODERS ----------
+C-Language Training Bootcamp --> Day-13
+
+Q.4) Write a program to print the following pattern (for n=5)-
+*
+* *
+* * *
+* * * *
+* * * * *
+* * * *
+* * *
+* *
+*
+*/
+
 #include <stdio.h>
-#include <math.h>
 
 int main() {
-    int num;
-    scanf("%d", &num);
+    int n;
+    printf("Enter the value of n: ");
+    scanf("%d", &n);
     
-    int rem, ans=0, i=0;
-    while(n) {
-        rem = n%2;
-        n/=2;
-        ans = (pow(10,i) * rem) + ans;          // reversing the bits
-        i++;
+    int row = 2*n-1;
+    int star;
+    for(int i=1; i<=row; i++) {
+        
+        // Finding the total number of stars according to the row number
+        if(i <= n) {
+            star = i;
+        }
+        else {
+            star = n - 1;
+            n--;
+        }
+        
+        // Printing stars
+        for(int j=1; j<=star; j++) {
+            printf("* ");
+        }
+        
+        printf("\n");
     }
-    
-    printf("%d", ans);
     
     return 0;
 }
