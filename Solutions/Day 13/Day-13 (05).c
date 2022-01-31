@@ -31,7 +31,7 @@ int main() {
         }
         
         int star = n - i;
-        // Printing the first triangle of stars
+        // Printing stars
         for(int j=1; j<=star; j++) {
             printf("* ");
         }
@@ -48,7 +48,7 @@ int main() {
             printf(" ");
         }
         
-        // Printing the first triangle of stars
+        // Printing stars
         for(int j=1; j<=i; j++) {
             printf("* ");
         }
