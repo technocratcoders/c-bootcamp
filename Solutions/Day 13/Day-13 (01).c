@@ -28,7 +28,7 @@ int main() {
         }
         
         count = (2 * i) - 1;
-        // Printing the first pyramid of numbers
+        // Printing the pyramid of digits
         for(int j=1; j<=count; j++) {
             printf("%d ", i);
         }
