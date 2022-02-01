@@ -1,29 +1,28 @@
 /*
-Q) Write a program to print prime factors of a number.
+---------- TECHNOCRAT CODERS ----------
+C-Language Training Bootcamp --> Day-15
+
+Q.2) Write a program to print an array.
 */
 
 #include <stdio.h>
 
 int main() {
-    int num;
-    printf("Enter the number: ");
-    scanf("%d", &num);
+    int size;
+    printf("Enter the size: ");
+    scanf("%d", &size);
     
-    for(int i=0; i<=num; i++) {
-        if(num % i == 0) {
-            int fact = i;
-
-            // Checking whether fact is prime or not.
-            int flag = 0;
-            for (int j=2; j<=fact/2; j++) {
-                if(fact % j == 0)
-                    flag = 1;
-            }
-            if(flag == 0) {
-                // Printing the prime factor.
-                printf("%d ", fact);
-            }
-        }
+    // Giving a variable as array's size is not recommended. So always give the size of an array according to the constraints.
+    int arr[10000];
+    
+    // Taking every element as input one by one
+    for(int i=0; i<size; i++) {
+        scanf("%d", &arr[i]);
+    }
+    
+    // Printing every element as input one by one
+    for(int i=0; i<size; i++) {
+        printf("%d ", arr[i]);
     }
     
     return 0;
