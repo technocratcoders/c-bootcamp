@@ -1,30 +1,30 @@
 /*
-Q) Write a program to print all palindrome numbers till a given number.
+---------- TECHNOCRAT CODERS ----------
+C-Language Training Bootcamp --> Day-15
+
+Q.4) Write a program to find the average of 8 numbers.
 */
 
 #include <stdio.h>
 
 int main() {
-    int num;
-    printf("Enter the number: ");
-    scanf("%d", &num);
+    int num[8];
     
-    for(int i=0; i<=num; i++) {
-        int rev = 0, rem;
-        int temp = i;
-
-        // Reversing the current value of i
-        while (temp > 0) {
-            rem = temp % 10;
-            rev = rev*10 + rem;
-            temp /= 10;
-        }
-
-        // Checking whether i is palindrome or not
-        if(rev == i) {
-            printf("%d ", i);
-        }
+    printf("Enter the elements of the array: ");
+    
+    // Taking every element one by one
+    for(int i=0; i<8; i++) {
+        scanf("%d", &num[i]);
     }
+    
+    int sum = 0;
+    
+    // Calculating sum of every element of the array
+    for(int i=0; i<8; i++) {
+        sum += num[i];
+    }
+    
+    printf("The average of entered 8 elements is: %d", sum/8);
     
     return 0;
 }
