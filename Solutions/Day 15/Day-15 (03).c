@@ -1,31 +1,27 @@
 /*
-Q) Write a program to print all armstrong numbers till a given number.
+---------- TECHNOCRAT CODERS ----------
+C-Language Training Bootcamp --> Day-15
+
+Q.3) Write a program to store the table of a given number in an array.
 */
 
 #include <stdio.h>
 
 int main() {
     int num;
-    printf("Enter the number: ");
+    printf("Enter the num: ");
     scanf("%d", &num);
-    
-    // This will be our key element to access all prime numbers till num.
-    int arm = 1;
-    
-    while (arm <= num) {
-        int flag = 0;
-        
-        for (int i=2; i<=arm/2; i++) {
-            if(arm % i == 0)
-                flag = 1;
-        }
 
-        if(flag == 0) {
-            // Printing the arm number.
-            printf("%d ", arm);
-        }
-        
-        arm++;
+    int table[10];
+    
+    // Calculating every element of the table one by one
+    for(int i=1; i<=10; i++) {
+        table[i-1] = num * i;
+    }
+    
+    // Printing every element of the table one by one
+    for(int i=0; i<10; i++) {
+        printf("%d ", table[i]);
     }
     
     return 0;
