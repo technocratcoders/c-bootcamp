@@ -1,10 +1,15 @@
 /*
-Q) Write a program to print the following pattern -
-    1
-   1 2
-  1 2 3
- 1 2 3 4
-1 2 3 4 5
+---------- TECHNOCRAT CODERS ----------
+C-Language Training Bootcamp --> Day-15
+
+Q.5) Write a program to print the following pattern -
+4 4 4 4 4 4 4
+4 3 3 3 3 3 4
+4 3 2 2 2 3 4
+4 3 2 1 2 3 4
+4 3 2 2 2 3 4
+4 3 3 3 3 3 4
+4 4 4 4 4 4 4
 */
 
 #include <stdio.h>
@@ -13,22 +18,33 @@ int main() {
     int n;
     printf("Enter the value of n: ");
     scanf("%d", &n);
-
-    for(int i=1; i<=n; i++) {
-        // Printing white spaces
-        int space = n - i;
-        while(space) {
-            printf(" ");
-            space--;
+    
+    int len = (2*n) - 1;
+    int start = 0, end = len - 1;
+    // Creating a 2D array to store the charac ters according to pattern
+    int ans[len][len];
+    
+    while(n) {
+        for(int i=start; i<=end; i++) {
+            for(int j=start; j<=end; j++) {
+                // Checking for the required condition
+                if(i==start || i==end || j==start || j==end) {
+                    ans[i][j] = n;
+                }
+            }
         }
-
-        // Printing numbers
-        int count = 1;
-        for(int j=0; j<=i; j++) {
-            printf("%d ", count);
-            count++;
+        
+        start++;
+        end--;
+        n--;
+    }
+    
+    // Printing the array
+    for(int i=0; i<len; i++) {
+        for(int j=0; j<len; j++) {
+            printf("%d ", ans[i][j]);
         }
-
+        
         printf("\n");
     }
     
