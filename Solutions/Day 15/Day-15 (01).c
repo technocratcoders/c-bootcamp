@@ -1,31 +1,28 @@
 /*
-Q) Write a program to print all prime numbers till a given number.
+---------- TECHNOCRAT CODERS ----------
+C-Language Training Bootcamp --> Day-15
+
+Q.1) Write a program to take an array as input.
 */
 
 #include <stdio.h>
 
 int main() {
-    int num;
-    printf("Enter the number: ");
-    scanf("%d", &num);
+    int size;
+    printf("Enter the size: ");
+    scanf("%d", &size);
     
-    // This will be our key element to access all prime numbers till num.
-    int prime = 2;
+    // Giving a variable as array's size is not recommended. So always give the size of an array according to the constraints.
+    int arr[10000];
     
-    while (prime <= num) {
-        int flag = 0;
-        
-        for (int i=2; i<=prime/2; i++) {
-            if(prime % i == 0)
-                flag = 1;
-        }
-
-        if(flag == 0) {
-            // Printing the prime number.
-            printf("%d ", prime);
-        }
-        
-        prime++;
+    // Taking every element as input one by one
+    for(int i=0; i<size; i++) {
+        scanf("%d", &arr[i]);
+    }
+    
+    // Printing every element as input one by one
+    for(int i=0; i<size; i++) {
+        printf("%d ", arr[i]);
     }
     
     return 0;
