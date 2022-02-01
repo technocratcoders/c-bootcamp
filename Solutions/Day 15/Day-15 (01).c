@@ -20,7 +20,7 @@ int main() {
         scanf("%d", &arr[i]);
     }
     
-    // Printing every element as input one by one
+    // Printing every element one by one
     for(int i=0; i<size; i++) {
         printf("%d ", arr[i]);
     }
