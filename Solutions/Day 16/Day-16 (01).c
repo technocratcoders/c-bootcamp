@@ -1,3 +1,10 @@
+/*
+---------- TECHNOCRAT CODERS ----------
+C-Language Training Bootcamp --> Day-16
+
+Q.1) Write a program to create a duplicate array.
+*/
+
 #include <stdio.h>
 
 int main() {
@@ -7,6 +14,7 @@ int main() {
     
     int arr[1000];
     // Taking array as input
+    printf("Enter the elements of array: ");
     for(int i=0; i<size; i++) {
         scanf("%d", &arr[i]);
     }
@@ -17,16 +25,16 @@ int main() {
         dup[i] = arr[i];
     }
     
-    printf("Original array: ");
+    printf("\nOriginal array: ");
     // Printing original array
     for(int i=0; i<size; i++) {
-        printf("%d", arr[i]);
+        printf("%d ", arr[i]);
     }
 
-    printf("Duplicate array: ");
+    printf("\nDuplicate array: ");
     // Printing duplicate array
     for(int i=0; i<size; i++) {
-        printf("%d", dup[i]);
+        printf("%d ", dup[i]);
     }
 
     return 0;
