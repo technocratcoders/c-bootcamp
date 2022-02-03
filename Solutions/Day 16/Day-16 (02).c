@@ -1,3 +1,10 @@
+/*
+---------- TECHNOCRAT CODERS ----------
+C-Language Training Bootcamp --> Day-16
+
+Q.2) Write a program to count the total number of 0&1 in the array.
+*/
+
 #include <stdio.h>
 
 int main() {
@@ -6,6 +13,7 @@ int main() {
     scanf("%d", &size);
     
     int arr[1000];
+    printf("Enter the elements of array: ");
     // Taking array as input
     for(int i=0; i<size; i++) {
         scanf("%d", &arr[i]);
@@ -17,16 +25,16 @@ int main() {
     for(int i=0; i<size; i++) {
 
         // Checking whether value is 0 or not
-        if(arr[i] == 0);
+        if(arr[i] == 0)
             count0++;
 
         // Checking whether value is 1 or not
-        if(arr[i] == 1);
+        if(arr[i] == 1)
             count1++;
     }
     
-    printf("Total number of 0: %d", count0);
-    printf("Total number of 1: %d", count1);
+    printf("\nTotal number of 0: %d", count0);
+    printf("\nTotal number of 1: %d", count1);
     
     return 0;
 }
