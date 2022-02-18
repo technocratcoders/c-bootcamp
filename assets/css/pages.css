@@ -1,0 +1,399 @@
+/**
+* Template Name: Technocrat Coders
+* Template URL: https://technocratcoders.github.io/
+* Author: Geekblower
+*/
+
+/*--------------------------------------------------------------
+# Pages Hero Section
+--------------------------------------------------------------*/
+#pages-top {
+    width: 100%;
+    height: 50vh;
+    background: url("../img/c.png") top center;
+    background-size: cover;
+    position: relative;
+    margin-bottom: -70px;
+}
+  
+@media (max-width: 992px) {
+    #pages-top {
+      margin-bottom: -60px;
+    }
+}
+  
+#pages-top:before {
+    content: "";
+    background: rgba(23, 12, 5, 0.829);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+  
+#pages-top .pages-top-container {
+    position: absolute;
+    bottom: 0;
+    top: 60px;
+    left: 15px;
+    right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+  
+#pages-top h1 {
+    margin: 0;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 56px;
+    text-transform: uppercase;
+    color: #fff;
+}
+    
+#pages-top h2 {
+    color: rgba(255, 255, 255, 0.671);
+    font-size: 18px;
+    text-decoration: underline;
+}
+  
+@media (min-width: 1024px) {
+    #pages-top {
+      background-attachment: fixed;
+    }
+}
+  
+@media (max-width: 768px) {
+    #pages-top h1 {
+      font-size: 25px;
+      line-height: 36px;
+    }
+    #pages-top {
+      height: 37vh;
+    }
+    #pages-top h2 {
+    font-size: 18px;
+    line-height: 24px;
+    }
+}
+
+/*--------------------------------------------------------------
+# Events Details
+--------------------------------------------------------------*/
+.events-details {
+  padding-top: 30px;
+}
+
+.events-details .events-details-container {
+  position: relative;
+}
+
+.events-details .events-details-carousel {
+  position: relative;
+  z-index: 1;
+}
+
+.events-details .events-details-carousel .owl-nav, .events-details .events-details-carousel .owl-dots {
+  margin-top: 5px;
+  text-align: left;
+}
+
+.events-details .events-details-carousel .owl-dot {
+  display: inline-block;
+  margin: 0 10px 0 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ddd !important;
+}
+
+.events-details .events-details-carousel .owl-dot.active {
+  background-color: var(--main) !important;
+}
+
+.events-details .events-info {
+  padding: 30px;
+  position: absolute;
+  right: 0;
+  bottom: -70px;
+  background: #fff;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.2);
+  z-index: 2;
+}
+
+.events-details .events-info h3 {
+  font-size: 22px;
+  color: #000;
+  font-weight: 700;
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.events-details .events-info ul {
+  list-style: none;
+  padding: 0;
+  font-size: 15px;
+}
+
+.events-details .events-info ul li + li {
+  margin-top: 10px;
+}
+
+.events-details .events-description {
+  padding-top: 50px;
+}
+
+.events-details .events-description h2 {
+  width: 50%;
+  color: #000;
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.events-details .events-description p {
+  padding: 40px 0 0 0;
+}
+
+@media (max-width: 768px) {
+  .events-details .events-description h2 {
+    width: 100%;
+  }
+  .events-details .events-info {
+    position: static;
+    margin-top: 30px;
+  }
+  
+  .events-details .events-description p {
+    padding: 0 0 0 0;
+  }
+}
+
+.events-details .event-btn {
+  margin-top: 28px;
+}
+
+.events-details .btn-event:hover {
+  background: var(--primary);
+  color: #fff;
+}
+
+@media (max-width: 968px) {
+  .events-details .event-btn {
+    margin-left: 23%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------------------------
+# Projects Details
+--------------------------------------------------------------*/
+.projects-details {
+  padding-top: 30px;
+}
+
+.projects-details .projects-details-container {
+  position: relative;
+}
+
+.projects-details .projects-details-carousel {
+  position: relative;
+  z-index: 1;
+}
+
+.projects-details .projects-details-carousel .owl-nav, .projects-details .projects-details-carousel .owl-dots {
+  margin-top: 5px;
+  text-align: left;
+}
+
+.projects-details .projects-details-carousel .owl-dot {
+  display: inline-block;
+  margin: 0 10px 0 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ddd !important;
+}
+
+.projects-details .projects-details-carousel .owl-dot.active {
+  background-color: var(--main) !important;
+}
+
+.projects-details .projects-info {
+  padding: 30px;
+  position: absolute;
+  right: 0;
+  bottom: -70px;
+  background: #fff;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+
+.projects-details .projects-info h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.projects-details .projects-info ul {
+  list-style: none;
+  padding: 0;
+  font-size: 15px;
+}
+
+.projects-details .projects-info ul li + li {
+  margin-top: 10px;
+}
+
+.projects-details .projects-description {
+  padding-top: 50px;
+}
+
+.projects-details .projects-description h2 {
+  width: 50%;
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.projects-details .projects-description p {
+  padding: 0 0 0 0;
+}
+
+@media (max-width: 768px) {
+  .projects-details .projects-description h2 {
+    width: 100%;
+  }
+  .projects-details .projects-info {
+    position: static;
+    margin-top: 30px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.options {
+  text-align: center;
+}
+
+.options i {
+font-weight: 700;
+font-size: 28px;
+text-align: center;
+color: #15222b;
+margin-right: 15px;
+}
+
+.options i:hover {
+color: #ff7f5d;
+}
